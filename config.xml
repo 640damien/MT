@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.dossou.app.meteoTrack"
+        versionCode="1" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>MeteoTrack</name>
+
+    <description>
+        Météo sur les circuit français
+    </description>
+
+    <author href="http://meteoTrack.app.dossou.org" email="damien.fourcade@gmail.com">
+        Capetot 2k13
+    </author>
+
+	<feature name="http://api.phonegap.com/1.0/device" />
+	
+	<preference name="fullscreen" value="true" />
+	<icon src="icon.png" />
+	
+	<plugin name="Geolocation" value="CDVLocation" />
+
+    
+</widget>

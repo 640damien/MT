@@ -1,0 +1,46 @@
+body{
+	color:white;
+	background: radial-gradient(ellipse at 50%, #222222, #555555);
+	font-family: 'Dosis', sans-serif;
+}
+
+section{
+	height: 50px;
+	margin: 8px;
+	background: #55EE55;
+}
+
+section>aside:nth-child(3){
+		text-align: center;
+}
+
+.debug {
+	background: #f0f;
+}
+.debug1 {
+	background: #00f;
+}
+.debug2 {
+	background: #f00;
+}
+
+.fbig{
+	font-size: 2.2em;
+	overflow: hidden;
+}
+
+.local{
+	background: #5555EE;
+}
+
+.circuit{
+	font-size: 22px;
+}
+
+.temp{
+	font-size: 18px;
+}
+
+.min{
+	font-size: 14px;
+}
