@@ -32,6 +32,13 @@
 	<aside class="mod">ooo</aside>
 	<aside class="mod">456456</aside>
 </section>-->
+
+<div id="homePage" class="page center">
+
+<section class="line grid2 header">
+	<aside id="other"><a href="javascript:slidePageFrom(page2, 'left');"><i class="icon-thumbs-up fbig"></i></a></aside>
+	<aside id="about"><a href="javascript:slidePageFrom(page1, 'right');"><i class="icon-compass fbig"></i></a></aside>
+</section>
 <section class="line local">
 	<aside id="namelocal" class="mod left w60 mt1 circuit pl1"><span >????</span></aside>
 	<aside class="mod right pl1"><i class="icon-fog-sun fbig"></i></aside>
@@ -57,6 +64,30 @@
 	<aside class="mod right pl1"><i class="icon-rain fbig"></i></aside>
 	<aside class="mod right mt1 temp"><span class="min">7~</span>12</aside>
 </section>
+</div>
+<div id="p1" class="page right" style="background-color: #8ca83d">
+    <a href="javascript:slidePageFrom(homePage, 'left');">Back</a>
+</div>
+<div id="p2" class="page left" style="background-color: #0c103d">
+    <a href="javascript:slidePageFrom(homePage, 'right');">Back</a>
+</div>
+<script>
+
+var homePage = document.getElementById("homePage"),
+    page1 = document.getElementById("p1"),
+    page2 = document.getElementById("p2"),
+    currentPage = homePage;
+
+    function slidePageFrom(page, from) {
+        // Position the page at the starting position of the animation
+        page.className = "page " + from;
+        // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
+        page.className ="page transition center";
+        currentPage.className = "page transition " + (from === "left" ? "right" : "left");
+        currentPage = page;
+    }
+
+</script>
 
 </body>
 </html>

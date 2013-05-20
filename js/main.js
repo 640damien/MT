@@ -10,13 +10,13 @@ var lat=44.810108;
 if(screen.width > 1000){
 
 //http://api.openweathermap.org/data/2.5/weather?callback=?id=2987805&units=metric
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?&units=metric",{lon:lon,lat:lat},function(data){
+	/*	$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?&units=metric",{lon:lon,lat:lat},function(data){
 			$("#minlocal").append(data.main.temp_min+"~");
 			$("#maxlocal").append(data.main.temp_max);
 			$("#namelocal").html(data.name);
 
 		})
-		.error(function() { alert("Service indisponible!"); });
+		.error(function() { alert("Service indisponible!"); });*/
 
 }
 else {
