@@ -24,7 +24,4 @@
     <preference name="orientation" value="portrait" />
 	<icon src="icon.png" />
 	
-	<plugin name="Geolocation" value="CDVLocation" />
-    <gap:splash src="splash.png" />
-    
 </widget>
