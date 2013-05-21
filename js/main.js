@@ -22,7 +22,7 @@ var homePage = document.getElementById("homePage"),
 Zepto(function($){
 
 //Gestion pagination
-$("#about").click(function(){
+$("#about").tap(function(){
   slidePageFrom(page1, 'right');
 })
 
