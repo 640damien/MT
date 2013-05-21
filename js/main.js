@@ -21,21 +21,27 @@ var homePage = document.getElementById("homePage"),
 
 Zepto(function($){
 
-//Gestion pagination
-$("#about").tap(function(){
-  slidePageFrom(page1, 'right');
-})
-
-$("#other").tap(function(){
-  slidePageFrom(page2, 'left');
-})
-
 var lon=-0.64129;
 var lat=44.810108;
 
-
+//Version PC
 if(screen.width > 1000){
+//Gestion pagination
+$("#about").click(function(){
+  slidePageFrom(page1, 'right');
+})
 
+$("#other").click(function(){
+  slidePageFrom(page2, 'left');
+})
+
+$("#forward").click(function(){
+  slidePageFrom(homePage, 'right');
+})
+
+$("#backward").click(function(){
+  slidePageFrom(homePage, 'left');
+})
 //http://api.openweathermap.org/data/2.5/weather?callback=?id=2987805&units=metric
 		/*$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?&units=metric",{lon:lon,lat:lat},function(data){
 			$("#minlocal").append(data.main.temp_min+"~");
@@ -46,7 +52,24 @@ if(screen.width > 1000){
 		.error(function() { alert("Service indisponible!"); });*/
 
 }
+//Version Mobile
 else {
+
+//Gestion pagination
+$("#about").tap(function(){
+  slidePageFrom(page1, 'right');
+})
+
+$("#other").tap(function(){
+  slidePageFrom(page2, 'left');
+})
+$("#forward").tap(function(){
+  slidePageFrom(homePage, 'right');
+})
+
+$("#backward").tap(function(){
+  slidePageFrom(homePage, 'left');
+})
 
     // Wait for Cordova to load
     //

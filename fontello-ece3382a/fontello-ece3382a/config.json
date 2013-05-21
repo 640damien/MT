@@ -1,0 +1,271 @@
+{
+  "name": "dossou",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "glyphs": [
+    {
+      "uid": "48cc210e59ff4bc56b6c8fba6eb384b8",
+      "css": "emo-coffee",
+      "code": 59435,
+      "src": "fontelico"
+    },
+    {
+      "uid": "078fec38562c3f83a1201a908040c141",
+      "css": "emo-sunglasses",
+      "code": 59434,
+      "src": "fontelico"
+    },
+    {
+      "uid": "72109d2fb3088d0e66ea6a9204297651",
+      "css": "spin1",
+      "code": 59426,
+      "src": "fontelico"
+    },
+    {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin2",
+      "code": 59392,
+      "src": "fontelico"
+    },
+    {
+      "uid": "2a6740fc2f9d0edea54205963f662594",
+      "css": "spin3",
+      "code": 59393,
+      "src": "fontelico"
+    },
+    {
+      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
+      "css": "spin4",
+      "code": 59394,
+      "src": "fontelico"
+    },
+    {
+      "uid": "5d2d07f112b8de19f2c0dbfec3e42c05",
+      "css": "spin5",
+      "code": 59425,
+      "src": "fontelico"
+    },
+    {
+      "uid": "9bc2902722abb366a213a052ade360bc",
+      "css": "spin6",
+      "code": 59427,
+      "src": "fontelico"
+    },
+    {
+      "uid": "3a230e539a4f3b904debd04c6c155034",
+      "css": "help",
+      "code": 59431,
+      "src": "entypo"
+    },
+    {
+      "uid": "de9a631a7d18106aea1c89ba51b1990a",
+      "css": "help-circled",
+      "code": 59432,
+      "src": "entypo"
+    },
+    {
+      "uid": "63b86fedd4ee9ad2105f54f4888e7088",
+      "css": "info",
+      "code": 59428,
+      "src": "entypo"
+    },
+    {
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled",
+      "code": 59433,
+      "src": "entypo"
+    },
+    {
+      "uid": "b6fc2f656ef87275889422e19550680a",
+      "css": "reply",
+      "code": 59429,
+      "src": "entypo"
+    },
+    {
+      "uid": "ec347024a3640deebeeab53fd0d5ad03",
+      "css": "forward",
+      "code": 59430,
+      "src": "entypo"
+    },
+    {
+      "uid": "906a8ebb0faf8db0411028a0364bb16d",
+      "css": "temperature",
+      "code": 59395,
+      "src": "meteocons"
+    },
+    {
+      "uid": "a6a5b2ea227f86157ba54ae543785161",
+      "css": "compass",
+      "code": 59397,
+      "src": "meteocons"
+    },
+    {
+      "uid": "053a1eaf96184e74876f45bd0f4970eb",
+      "css": "na",
+      "code": 59396,
+      "src": "meteocons"
+    },
+    {
+      "uid": "39a24b1eb625a4a551585745107e8ef0",
+      "css": "celcius",
+      "code": 59400,
+      "src": "meteocons"
+    },
+    {
+      "uid": "5478f7c5cc0ad4897835f711eccea4dd",
+      "css": "fahrenheit",
+      "code": 59399,
+      "src": "meteocons"
+    },
+    {
+      "uid": "d05dd160c24e53afc4addd30b5655b74",
+      "css": "clouds-flash-alt",
+      "code": 59401,
+      "src": "meteocons"
+    },
+    {
+      "uid": "1c2a34e8bd2f8a53e3b059447a8e544f",
+      "css": "sunrise",
+      "code": 59416,
+      "src": "meteocons"
+    },
+    {
+      "uid": "95fb2e5fdd1ea7e4a420b6ed330e6b08",
+      "css": "sun",
+      "code": 59415,
+      "src": "meteocons"
+    },
+    {
+      "uid": "a555120b3743d482efcc3058733d3fd9",
+      "css": "mist",
+      "code": 59414,
+      "src": "meteocons"
+    },
+    {
+      "uid": "2efb5347832a09ae69de043f897ec4b9",
+      "css": "wind",
+      "code": 59413,
+      "src": "meteocons"
+    },
+    {
+      "uid": "d0c325468a74095e565664bec2623aa3",
+      "css": "snowflake",
+      "code": 59412,
+      "src": "meteocons"
+    },
+    {
+      "uid": "9cd3e294ca3ad3dda66bc5a804021c46",
+      "css": "cloud-sun",
+      "code": 59411,
+      "src": "meteocons"
+    },
+    {
+      "uid": "2440f961b415837c6bf30424a6711708",
+      "css": "cloud-moon",
+      "code": 59410,
+      "src": "meteocons"
+    },
+    {
+      "uid": "957fd72e52a0e9eb585a0361114c4c83",
+      "css": "fog-sun",
+      "code": 59409,
+      "src": "meteocons"
+    },
+    {
+      "uid": "dbf0f9c3d15e5e8046bb5f5fb5898b49",
+      "css": "fog-moon",
+      "code": 59408,
+      "src": "meteocons"
+    },
+    {
+      "uid": "aba39b610b88a73d81f0fa683649b92d",
+      "css": "fog-cloud",
+      "code": 59407,
+      "src": "meteocons"
+    },
+    {
+      "uid": "2ca5a006e414e0827f7fc5b187689c04",
+      "css": "fog",
+      "code": 59406,
+      "src": "meteocons"
+    },
+    {
+      "uid": "17463471d0f132cee16835507ea51ecf",
+      "css": "cloud",
+      "code": 59405,
+      "src": "meteocons"
+    },
+    {
+      "uid": "cc1179bd34dcbe7bf80785075af60d37",
+      "css": "cloud-flash",
+      "code": 59417,
+      "src": "meteocons"
+    },
+    {
+      "uid": "9af2b75a89bd99b83457f041df26da8b",
+      "css": "cloud-flash-alt",
+      "code": 59404,
+      "src": "meteocons"
+    },
+    {
+      "uid": "f59875f40cbc5ad1b04775cd96feabf1",
+      "css": "drizzle",
+      "code": 59403,
+      "src": "meteocons"
+    },
+    {
+      "uid": "d577552bb94bdeb53e6517873481aeea",
+      "css": "rain",
+      "code": 59402,
+      "src": "meteocons"
+    },
+    {
+      "uid": "5fad7d41511701337ddd5ad9896edc4b",
+      "css": "windy",
+      "code": 59398,
+      "src": "meteocons"
+    },
+    {
+      "uid": "86351391d6cbc7a85730414294139661",
+      "css": "windy-rain",
+      "code": 59424,
+      "src": "meteocons"
+    },
+    {
+      "uid": "127ed05f3c024a9c73487f18cf3d530d",
+      "css": "snow",
+      "code": 59423,
+      "src": "meteocons"
+    },
+    {
+      "uid": "02bb2eaa1515b8fc954abbaf80212739",
+      "css": "snow-alt",
+      "code": 59422,
+      "src": "meteocons"
+    },
+    {
+      "uid": "0f6059e468716a93329821bcbf11220d",
+      "css": "snow-heavy",
+      "code": 59421,
+      "src": "meteocons"
+    },
+    {
+      "uid": "b500010a53f4807828ac252725dc6fd1",
+      "css": "hail",
+      "code": 59420,
+      "src": "meteocons"
+    },
+    {
+      "uid": "b215adc51ca2aa37e7bbe244d1fa52cc",
+      "css": "clouds",
+      "code": 59419,
+      "src": "meteocons"
+    },
+    {
+      "uid": "f4c428e42b86673278e98e6f2e0a8cd2",
+      "css": "clouds-flash",
+      "code": 59418,
+      "src": "meteocons"
+    }
+  ]
+}
