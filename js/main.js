@@ -167,22 +167,21 @@ $("#other").tap(function(){
 $("#forward").tap(function(){
   slidePageFrom(homePage, 'swpright');
 })
-
 $("#backward").tap(function(){
   slidePageFrom(homePage, 'swpleft');
 })
 
-$("#p1").swipeLeft(function(){
+$("#p1").swipeRight(function(){
   slidePageFrom(homePage, 'swpleft');
 })
-$("#p2").swipeRight(function(){
+$("#p2").swipeLeft(function(){
   slidePageFrom(homePage, 'swpright');
 })
 $("#homePage").swipeLeft(function(){
-  slidePageFrom(page2, 'swpright');
+  slidePageFrom(page1, 'swpright');
 })
 $("#homePage").swipeRight(function(){
-  slidePageFrom(page1, 'swpleft');
+  slidePageFrom(page2, 'swpleft');
 })
 
 
