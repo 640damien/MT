@@ -7,30 +7,36 @@ var homePage = document.getElementById("homePage"),
     page1 = document.getElementById("p1"),
     page2 = document.getElementById("p2"),
     currentPage = homePage;
+var curid=0;
 
     function slidePageFrom(page, from) {
         // Position the page at the starting position of the animation
         page.className = "page " + from;
         // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
         page.className ="page transition center";
-        currentPage.className = "page transition " + (from === "left" ? "right2" : "left");
+        currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
         currentPage = page;
     }
 
-   function getIcon(id) {
+   function getIcon(wid,cloud) {
         var icon;
-        if (id>=200 && id<250)
-            id=200;
-        else if ((id>=300 && id<350) || (id>=520 && id<523))
-            id=300;
-        else if (id>=500 && id<505)
-            id=500;
-        else if (id>=600 && id<622 && id!=602)
-            id=600;
-        else if (id>=700 && id<750)
-            id=700;
+        if (wid>=200 && wid<250)
+            wid=200;
+        else if ((wid>=300 && wid<350) || (wid>=520 && wid<523))
+            wid=300;
+        else if (wid>=500 && wid<505)
+            wid=500;
+        else if (wid>=600 && wid<622 && wid!=602)
+            wid=600;
+        else if (wid>=700 && wid<750)
+            wid=700;
+        else if (wid==800 && cloud>30)
+            wid=50;
 
-        switch (id) {
+        switch (wid) {
+         case 50:
+            icon="cloud-sun";
+            break;
          case 200:
             icon="clouds-flash";
             break;
@@ -41,13 +47,13 @@ var homePage = document.getElementById("homePage"),
             icon="rain";
             break;
          case 511:
-            icon="snow-heavy";
+            icon="snow";
             break;
          case 600:
             icon="snow";
             break;
          case 602:
-            icon="snow";
+            icon="snow-heavy";
             break;
          case 700:
             icon="fog";
@@ -77,6 +83,7 @@ var homePage = document.getElementById("homePage"),
 function updatep1(id, lon, lat) {
         $("#p11").html("");
         var req;
+        var color=198;
         if (id>0)
             req="http://api.openweathermap.org/data/2.5/forecast?callback=?&id="+id+"&units=metric";
         else
@@ -90,10 +97,13 @@ function updatep1(id, lon, lat) {
             $("#nametap").html("<span class=\"fs22\">"+data.city.name+"</span>");
             var htmlstr="";
             for(var i= 0; i < data.list.length; i++){
-                    htmlstr+="<section class=\"line detail\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
+                    if (data.list[i].dt_txt.substr(11,2)==0){
+                        color-=30;
+                    }
+                    htmlstr+="<section class=\"line detail c"+color+"\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
                     "<aside>-</aside>"+
-                    "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id)+"</aside>"+
+                    "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id,data.list[i].clouds.all)+"</aside>"+
                     "<aside class=\"tar pr1\">GO!</aside></section>";
             }
             $("#p11").append(htmlstr);
@@ -111,31 +121,34 @@ var lat=44.810108;
 if(screen.width > 1000){
     //Gestion pagination
     $("#about").click(function(){
-      slidePageFrom(page1, 'right2');
+      slidePageFrom(page1, 'swpright');
     })
 
     $("#other").click(function(){
-      slidePageFrom(page2, 'left');
+      slidePageFrom(page2, 'swpleft');
     })
 
     $("#forward").click(function(){
-      slidePageFrom(homePage, 'right2');
+      slidePageFrom(homePage, 'swpright');
     })
 
     $("#backward").click(function(){
-      slidePageFrom(homePage, 'left');
+      slidePageFrom(homePage, 'swpleft');
     })
 
     $(".aaa").click(function(){
       var id=$(this).attr('id');
-      //alert(id);
-      if (id>0){
-        updatep1(id, 0, 0);
+      if (id!=curid){
+          if (id>0){
+            curid=id;
+            updatep1(id, 0, 0);
+            }
+          else{
+            curid=0;
+            updatep1(0,lon,lat);
+          }
         }
-      else{
-        updatep1(0,lon,lat);
-      }
-      slidePageFrom(page1, 'right2');
+      slidePageFrom(page1, 'swpright');
     })
 
     updatep1(0,lon,lat);
@@ -145,46 +158,49 @@ else {
 
 //Gestion pagination
 $("#about").tap(function(){
-  slidePageFrom(page1, 'right2');
+  slidePageFrom(page1, 'swpright');
 })
 
 $("#other").tap(function(){
-  slidePageFrom(page2, 'left');
+  slidePageFrom(page2, 'swpleft');
 })
 $("#forward").tap(function(){
-  slidePageFrom(homePage, 'right2');
+  slidePageFrom(homePage, 'swpright');
 })
 
 $("#backward").tap(function(){
-  slidePageFrom(homePage, 'left');
+  slidePageFrom(homePage, 'swpleft');
 })
 
 $("#p1").swipeLeft(function(){
-  slidePageFrom(homePage, 'left');
+  slidePageFrom(homePage, 'swpleft');
 })
 $("#p2").swipeRight(function(){
-  slidePageFrom(homePage, 'right');
+  slidePageFrom(homePage, 'swpright');
 })
 $("#homePage").swipeLeft(function(){
-  slidePageFrom(page2, 'left');
+  slidePageFrom(page2, 'swpright');
 })
 $("#homePage").swipeRight(function(){
-  slidePageFrom(page1, 'right2');
+  slidePageFrom(page1, 'swpleft');
 })
 
 
 
 $(".aaa").tap(function(){
-  var id=$(this).attr('id');
-  //alert(id);
-  if (id>0){
-    updatep1(id, 0, 0);
-    }
-  else{
-    updatep1(0,lon,lat);
-  }
-  slidePageFrom(page1, 'right2');
-})
+      var id=$(this).attr('id');
+      if (id!=curid){
+          if (id>0){
+            curid=id;
+            updatep1(id, 0, 0);
+            }
+          else{
+            curid=0;
+            updatep1(0,lon,lat);
+          }
+        }
+      slidePageFrom(page1, 'swpright');
+    })
 
 
 
@@ -230,11 +246,6 @@ $(".aaa").tap(function(){
                 'message: ' + error.message + '\n');
         $("#namelocal").html("ERREUR");
     }
-
-
-
-
-
 }
 
 });

@@ -11,7 +11,6 @@ a{
 section{
 	height: 50px;
 	margin: 8px;
-	background: #55EE55;
 	background-color: rgba(0, 188, 153, 0.7);
 }
 
@@ -25,7 +24,7 @@ section{
 
 
 .local{
-	background-color: rgba(85, 238, 85, 0.7);
+	background-color: rgba(0, 108, 153, 0.7);
 }
 
 .fs22{font-size: 22px;}
@@ -34,6 +33,13 @@ section{
 
 .ocre{background-color: rgba(240, 69, 25, 0.7);}
 .rouge{background-color: rgba(255, 175, 58, 0.7);}
+.c198{background-color: rgba(0, 198, 153, 0.7);}
+.c168{background-color: rgba(0, 168, 153, 0.7);}
+.c138{background-color: rgba(0, 138, 153, 0.7);}
+.c108{background-color: rgba(0, 108, 153, 0.7);}
+.c78{background-color: rgba(0, 78, 153, 0.7);}
+.c48{background-color: rgba(0, 48, 153, 0.7);}
+
 
 .header{
 	background: none;
@@ -58,7 +64,6 @@ section{
 }
 
 .page {
-	
     position: absolute;
     top: 0;
     left: 0%;
@@ -68,7 +73,7 @@ section{
     transform: translate3d(0, 0, 0);
 }
  
-.page.left {
+.page.swpleft {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
 }
@@ -78,7 +83,7 @@ section{
     transform: translate3d(0, 0, 0);
 }
  
-.page.right2 {
+.page.swpright {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
 }
