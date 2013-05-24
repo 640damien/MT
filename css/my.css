@@ -2,6 +2,7 @@ body{
 	color:white;	
 	font-family: 'Dosis', sans-serif;
 	background-image: url("../img/stripe2.png");
+	overflow: hidden;
 }
 
 a{
