@@ -16,11 +16,11 @@ section{
 }
 
 #content{
-	height: 220px;
+	height: 490px;
 	background-color: rgba(101, 253, 90, 0.6);
 }
 
-.pt8 { padding-top: 80px; }
+.pt8 { padding-top: 343px; }
 
 .fbig{
 	font-size: 2.2em;

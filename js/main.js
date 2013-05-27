@@ -8,6 +8,7 @@ var homePage = document.getElementById("homePage"),
     page2 = document.getElementById("p2"),
     currentPage = homePage;
 var curid=0;
+var go=1;
 
     function slidePageFrom(page, from) {
         // Position the page at the starting position of the animation
@@ -20,6 +21,11 @@ var curid=0;
 
    function getIcon(wid,cloud) {
         var icon;
+        var forcing=false;
+        if (go==3){
+          forcing=true;
+        }
+        go=3;
         if (wid>=200 && wid<250)
             wid=200;
         else if ((wid>=300 && wid<350) || (wid>=520 && wid<523))
@@ -36,6 +42,7 @@ var curid=0;
         switch (wid) {
          case 50:
             icon="cloud-sun";
+            go=1;
             break;
          case 200:
             icon="clouds-flash";
@@ -60,28 +67,36 @@ var curid=0;
             break;
          case 800:
             icon="sun";
+            go=1;
             break;
          case 801:
             icon="cloud-sun";
+            go=1;
             break;
          case 802:
             icon="cloud";
+            go=1;
             break;
          case 803:
             icon="clouds";
+            go=2;
             break;
          case 804:
             icon="clouds";
+            go=2;
             break;
          default: 
             icon="na";
          break;
         }
+        if(forcing && go==1){
+          go=2;
+        }
         return "<i class=\"icon-"+icon+"\"></i>";
     }
 
 function updatep1(id, lon, lat) {
-        $("#p11").html("");
+        $("#p11").html('<div class="txtcenter" style="height: 200px;padding-top: 70px;"><span class="pt3"><img src="img/ajax-loader.gif"></span></div>');
         var req;
         var color=198;
         if (id>0)
@@ -105,8 +120,9 @@ function updatep1(id, lon, lat) {
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
                     "<aside>-</aside>"+
                     "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id,data.list[i].clouds.all)+"</aside>"+
-                    "<aside class=\"tar pr1\">GO!</aside></section>";
+                    "<aside class=\"tar pr1\"><img src=\"img/status"+go+".gif\"></aside></section>";
             }
+            $("#p11").html("");
             $("#p11").append(htmlstr);
         })
         //.error(function() { alert("Service indisponible!"); });
@@ -154,8 +170,8 @@ if(screen.width > 1000){
         }
       slidePageFrom(page1, 'swpright');
     })
-
-    //updatep1(0,lon,lat);
+    $("#loading").html("");
+    updatep1(0,lon,lat);
 }
 //Version Mobile
 else {
@@ -234,7 +250,8 @@ $(".aaa").tap(function(){
                             'Timestamp: '          +                                   position.timestamp          + '<br />';*/
         	lat = position.coords.latitude;
         	lon = position.coords.longitude;
-            updatep1(0,lon,lat);
+          $("#loading").html("");
+          updatep1(0,lon,lat);
     		/*$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?&units=metric",{lon:lon,lat:lat},function(data){
 			$("#minlocal").append(data.main.temp_min+"~");
 			$("#maxlocal").append(data.main.temp_max);
@@ -250,7 +267,7 @@ $(".aaa").tap(function(){
     function onError(error) {
         alert('code: '    + error.code    + '\n' +
                 'message: ' + error.message + '\n');
-        $("#namelocal").html("ERREUR");
+        $("#labeltap").html("ERREUR");
     }
 }
 
