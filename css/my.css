@@ -15,6 +15,13 @@ section{
 	background-color: rgba(0, 188, 153, 0.7);
 }
 
+#content{
+	height: 220px;
+	background-color: rgba(101, 253, 90, 0.6);
+}
+
+.pt8 { padding-top: 80px; }
+
 .fbig{
 	font-size: 2.2em;
 }
@@ -31,14 +38,13 @@ section{
 .fs18{font-size: 18px;}
 .fs14{font-size: 14px;}
 
-.ocre{background-color: rgba(240, 69, 25, 0.7);}
-.rouge{background-color: rgba(255, 175, 58, 0.7);}
 .c198{background-color: rgba(0, 198, 153, 0.7);}
 .c168{background-color: rgba(0, 168, 153, 0.7);}
 .c138{background-color: rgba(0, 138, 153, 0.7);}
 .c108{background-color: rgba(0, 108, 153, 0.7);}
 .c78{background-color: rgba(0, 78, 153, 0.7);}
 .c48{background-color: rgba(0, 48, 153, 0.7);}
+.pomme{background-color: rgba(195,255,104);}
 
 
 .header{

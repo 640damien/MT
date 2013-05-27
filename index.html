@@ -28,35 +28,35 @@
 
 <div id="homePage" class="page center">
 <section class="line grid2 header">
-	<aside id="other" class="ocre"><i class="icon-info fbig"></i></aside>
-	<aside id="about" class="rouge"><i class="icon-help fbig"></i></aside>
+	<aside id="other" class="c198"><i class="icon-info fbig"></i></aside>
+	<aside id="about" class="c138"><i class="icon-help fbig"></i></aside>
 </section>
 <section id="0" class="aaa line local">
-	<aside id="namelocal" class="mod left w60 mt1 fs22 pl1"><span >????</span></aside>
-	<aside class="mod right pl1"><i id="meteolocal" class="icon-fog-sun fbig"></i></aside>
+	<aside id="namelocal" class="mod left w60 mt1 fs22 pl1"><span >Attente GPS</span></aside>
+	<aside class="mod right pl1 mt1 mr1"><img src="img/ajax-loader.gif"></aside>
 	<aside class="mod right mt1 fs18"><span id="minlocal" class="fs14"></span><span id="maxlocal"></span></aside>
 </section>
-<section id="2988507" class="aaa line">
+<section id="2988507" label="Paris" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Paris</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
-<section id="3001617" class="aaa line">
+<section id="3001617" label="Pau Arnos" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Pau Arnos</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
-<section id="3020584" class="aaa line">
+<section id="3020584" label="Nogaro" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Nogaro</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
-<section id="3003603" class="aaa line">
+<section id="3003603" label="Le Mans" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Le Mans</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
-<section id="6544556" class="aaa line">
+<section id="6544556" label="Val Thorens" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Val Thorens</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
-<section id="1581130" class="aaa line">
+<section id="1581130" label="Hanoi" class="aaa line">
 	<aside class="mod left w60 mt1 fs22 pl1">Hanoi</aside>
 	<aside class="mod right pl1"><i class="icon-forward fbig"></i></aside>
 </section>
@@ -66,10 +66,13 @@
 
 <div id="p1" class="page swpright">
 <section class="line grid1-3 header">
-	<aside id="backward" class="ocre"><i class="icon-reply fbig"></i></aside>
-	<aside id="nametap" class="ocre"><span class="fs22">N/A</span></aside>
+	<aside id="backward" class="c138"><i class="icon-reply fbig"></i></aside>
+	<aside id="labeltap" class="c198"><span class="fs22">N/A</span></aside>
 </section>
 <div id="p11">
+	<div class="txtcenter" style="height: 200px;padding-top: 70px;">
+		<span class="pt3"><img src="img/ajax-loader.gif"></span>
+	</div>
 	<!--<section class="line detail">
 	<aside class="pl1">15h</aside>
 	<aside>12°</aside>
@@ -81,9 +84,13 @@
 
 </div>
 <div id="p2" class="page swpleft">
-<section class="line grid2 header">
-	<aside></aside>
-	<aside id="forward" class="ocre"><i class="icon-forward fbig"></i></aside>
+<section class="line grid3-1 header">
+	<aside id="info" class="c198"><span class="fs22">About</span></aside>
+	<aside id="forward" class="c138"><i class="icon-forward fbig"></i></aside>
+</section>
+<section id="content" class="line">
+	<aside class="mod left mt1 fs16 pl1"><p>Données Météo : http://openweathermap.org/</p><p>Icônes : meteocons <i class="icon-sun fs22"></i>
+		</p><p>Frameworks : KNACSS, zepto.js</p><p class="txtright pt8">Build With Phonegap</p></aside>
 </section>
 </div>
 <script>

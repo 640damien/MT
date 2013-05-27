@@ -91,10 +91,11 @@ function updatep1(id, lon, lat) {
         $.getJSON(req,function(data){
         //$.getJSON("http://api.openweathermap.org/data/2.5/forecast?callback=?&q=london&units=metric",function(data){
 
-            if (id==0)
+            if (id==0){
                 $("#namelocal").html(data.city.name);
+                $("#labeltap").html("<span class=\"fs22\">"+data.city.name+"</span>"); 
+              }
             
-            $("#nametap").html("<span class=\"fs22\">"+data.city.name+"</span>");
             var htmlstr="";
             for(var i= 0; i < data.list.length; i++){
                     if (data.list[i].dt_txt.substr(11,2)==0){
@@ -140,6 +141,9 @@ if(screen.width > 1000){
       var id=$(this).attr('id');
       if (id!=curid){
           if (id>0){
+            //Nom en dur dans attribut label
+            var label=$(this).attr('label');
+            $("#labeltap").html("<span class=\"fs22\">"+label+"</span>"); 
             curid=id;
             updatep1(id, 0, 0);
             }
@@ -151,7 +155,7 @@ if(screen.width > 1000){
       slidePageFrom(page1, 'swpright');
     })
 
-    updatep1(0,lon,lat);
+    //updatep1(0,lon,lat);
 }
 //Version Mobile
 else {
@@ -190,6 +194,9 @@ $(".aaa").tap(function(){
       var id=$(this).attr('id');
       if (id!=curid){
           if (id>0){
+            //Nom en dur dans attribut label
+            var label=$(this).attr('label');
+            $("#labeltap").html("<span class=\"fs22\">"+label+"</span>"); 
             curid=id;
             updatep1(id, 0, 0);
             }
