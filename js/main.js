@@ -108,6 +108,7 @@ function updatep1(id, lon, lat) {
         //$.getJSON("http://api.openweathermap.org/data/2.5/forecast?callback=?&q=london&units=metric",function(data){
 
             if (id==0){
+                $("#loading").html("");
                 $("#namelocal").html(data.city.name);
                 $("#labeltap").html("<span class=\"fs22\">"+data.city.name+"</span>"); 
               }
@@ -237,7 +238,6 @@ $(".aaa").tap(function(){
 
         	lat = position.coords.latitude;
         	lon = position.coords.longitude;
-          $("#loading").html("");
           updatep1(0,lon,lat);
 
 		//})
