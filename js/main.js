@@ -98,6 +98,7 @@ var go=1;
 function updatep1(id, lon, lat) {
         $("#p11").html('<div class="txtcenter" style="height: 200px;padding-top: 70px;"><span class="pt3"><img src="img/ajax-loader.gif"></span></div>');
         var req;
+        var d;
         var color=198;
         if (id>0)
             req="http://api.openweathermap.org/data/2.5/forecast?callback=?&id="+id+"&units=metric";
@@ -115,6 +116,8 @@ function updatep1(id, lon, lat) {
             for(var i= 0; i < data.list.length; i++){
                     if (data.list[i].dt_txt.substr(11,2)==0){
                         color-=30;
+                        d = moment.unix(data.list[i].dt);
+                        htmlstr+="<p class=\"txtcenter fs18\">"+d.format("dddd D MMMM")+"</p>";
                     }
                     htmlstr+="<section class=\"line detail c"+color+"\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
@@ -137,10 +140,6 @@ var lat=44.810108;
 //Version PC
 if(screen.width > 1000){
     //Gestion pagination
-    $("#about").click(function(){
-      slidePageFrom(page1, 'swpright');
-    })
-
     $("#other").click(function(){
       slidePageFrom(page2, 'swpleft');
     })
@@ -177,10 +176,6 @@ if(screen.width > 1000){
 else {
 
 //Gestion pagination
-$("#about").tap(function(){
-  slidePageFrom(page1, 'swpright');
-})
-
 $("#other").tap(function(){
   slidePageFrom(page2, 'swpleft');
 })
@@ -239,23 +234,11 @@ $(".aaa").tap(function(){
     // onSuccess Geolocation
     //
     function onSuccess(position) {
-        //var element = document.getElementById('geolocation');
-        /*element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
-                            'Longitude: '          + position.coords.longitude             + '<br />' +
-                            'Altitude: '           + position.coords.altitude              + '<br />' +
-                            'Accuracy: '           + position.coords.accuracy              + '<br />' +
-                            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
-                            'Heading: '            + position.coords.heading               + '<br />' +
-                            'Speed: '              + position.coords.speed                 + '<br />' +
-                            'Timestamp: '          +                                   position.timestamp          + '<br />';*/
+
         	lat = position.coords.latitude;
         	lon = position.coords.longitude;
           $("#loading").html("");
           updatep1(0,lon,lat);
-    		/*$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?&units=metric",{lon:lon,lat:lat},function(data){
-			$("#minlocal").append(data.main.temp_min+"~");
-			$("#maxlocal").append(data.main.temp_max);
-			$("#namelocal").html(data.name);*/
 
 		//})
 		//.error(function() { alert("Service indisponible"); });
