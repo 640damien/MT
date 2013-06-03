@@ -28,5 +28,5 @@
 	<icon src="icon.png" />
 
     <gap:splash src="splash.png" />
-    <gap:splash src="splash/ios/splash.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="splash/ios/splash.png" gap:platform="ios" width="640" height="960" />
 </widget>
