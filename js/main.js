@@ -17,6 +17,15 @@ var go=1;
         page.className ="page transition center";
         currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
         currentPage = page;
+        if (currentPage==homePage){
+          $("#glo").css('height','588px')
+        }
+        else if (currentPage==p2){
+          $("#glo").css('height','480px')
+        }
+        else if (currentPage==p1){
+          $("#glo").css('height','2646px')
+        }
     }
 
    function getIcon(wid,cloud) {
