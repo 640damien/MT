@@ -12,7 +12,7 @@ var go=1;
 
     function slidePageFrom(page, from) {
         // Position the page at the starting position of the animation
-        page.className = "page " + from;
+        //page.className = "page " + from;
         // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
         page.className ="page transition center";
         currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
