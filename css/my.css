@@ -15,6 +15,11 @@ section{
 	background-color: rgba(0, 188, 153, 0.7);
 }
 
+#glo{
+	position: relative;
+	overflow: hidden;
+}
+
 #content{
 	height: auto;
 	background-color: rgba(101, 253, 90, 0.6);
