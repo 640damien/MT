@@ -115,6 +115,12 @@ function updatep1(id, lon, lat) {
             
             var htmlstr="";
             for(var i= 0; i < data.list.length; i++){
+                    if (i==0 && id==0){
+                      $("#loading").html(getIcon(data.list[i].weather[0].id,data.list[i].clouds.all));
+                      $("#loading").removeClass("mt1");
+                      $("#loading i").addClass("fbig");
+
+                    }
                     if (data.list[i].dt_txt.substr(11,2)==0){
                         color-=30;
                         d = moment.unix(data.list[i].dt);

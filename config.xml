@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>MeteoTrack</name>
+    <name>MCF</name>
 
     <description>
         Météo sur les circuit français
@@ -17,7 +17,7 @@
         Capetot 2k13
     </author>
 
-	<feature name="http://api.phonegap.com/1.0/device" />
+	<!-- <feature name="http://api.phonegap.com/1.0/device" /> -->
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
 	
 	<preference name="fullscreen" value="true" />
