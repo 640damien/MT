@@ -123,6 +123,7 @@ function updatep1(id, lon, lat) {
               }
             
             var htmlstr="";
+            var rain="-";
             for(var i= 0; i < data.list.length; i++){
                     if (i==0 && id==0){
                       $("#loading").html(getIcon(data.list[i].weather[0].id,data.list[i].clouds.all));
@@ -135,9 +136,16 @@ function updatep1(id, lon, lat) {
                         d = moment.unix(data.list[i].dt);
                         htmlstr+="<p class=\"txtcenter fs18\">"+d.format("dddd D MMMM")+"</p>";
                     }
+                    if (data.list[i].rain === undefined){
+                        rain="-";
+                    }
+                    else{
+                      rain=data.list[i].rain['3h']+"mm";
+                    }
+
                     htmlstr+="<section class=\"line detail c"+color+"\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
-                    "<aside>-</aside>"+
+                    "<aside class=\"fs18\">"+rain+"</aside>"+
                     "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id,data.list[i].clouds.all)+"</aside>"+
                     "<aside class=\"tar pr1\"><img src=\"img/status"+go+".gif\"></aside></section>";
             }
