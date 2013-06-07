@@ -136,11 +136,11 @@ function updatep1(id, lon, lat) {
                         d = moment.unix(data.list[i].dt);
                         htmlstr+="<p class=\"txtcenter fs18\">"+d.format("dddd D MMMM")+"</p>";
                     }
-                    if (data.list[i].rain === undefined){
-                        rain="-";
-                    }
-                    else{
-                      rain=data.list[i].rain['3h']+"mm";
+                    rain="-";
+                    if (data.list[i].rain !== undefined){
+                      if (data.list[i].rain['3h']!=0){
+                        rain=data.list[i].rain['3h']+"mm";
+                      }
                     }
 
                     htmlstr+="<section class=\"line detail c"+color+"\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
