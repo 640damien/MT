@@ -145,9 +145,9 @@ function updatep1(id, lon, lat) {
 
                     htmlstr+="<section class=\"line detail c"+color+"\"><aside class=\"pl1\">"+data.list[i].dt_txt.substr(11,2)+"h</aside>"+
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
-                    "<aside class=\"fs18\">"+rain+"</aside>"+
+                    "<aside><p class=\"fs16 mt05\">"+rain+"</p></aside>"+
                     "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id,data.list[i].clouds.all)+"</aside>"+
-                    "<aside class=\"tar pr1\"><img src=\"img/status"+go+".gif\"></aside></section>";
+                    "<aside class=\"tar pr1 mt05\"><img src=\"img/status"+go+".gif\"></aside></section>";
             }
             $("#p11").html("");
             $("#p11").append(htmlstr);

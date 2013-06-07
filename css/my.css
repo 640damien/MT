@@ -34,9 +34,12 @@ section{
 
 .pt30 { padding-top: 300px; }
 
+
 .fbig{
 	font-size: 2.2em;
 }
+
+.mt05{margin-top: 5px !important; }
 
 .tar{text-align: right;}
 .tac{text-align: center;}
@@ -49,6 +52,7 @@ section{
 .fs26{font-size: 26px;}
 .fs22{font-size: 22px;}
 .fs18{font-size: 18px;}
+.fs16{font-size: 16px;}
 .fs14{font-size: 14px;}
 
 .c198{background-color: rgba(0, 198, 153, 0.7);}
