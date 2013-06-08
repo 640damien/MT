@@ -13,7 +13,7 @@ var go=1;
     function slidePageFrom(page, from) {
         // Position the page at the starting position of the animation
         //page.className = "page " + from;
-        // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
+        // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation   
         page.className ="page transition center";
         currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
         currentPage = page;
@@ -26,6 +26,7 @@ var go=1;
         else if (currentPage==p1){
           $("#glo").css('height','2646px')
         }
+        $('html,body').animate({scrollTop: 0}, 'slow');
     }
 
    function getIcon(wid,cloud) {
