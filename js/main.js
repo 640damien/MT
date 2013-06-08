@@ -26,7 +26,7 @@ var go=1;
         else if (currentPage==p1){
           $("#glo").css('height','2646px')
         }
-        $('html,body').animate({scrollTop: 0}, 'slow');
+        $('body').scrollTop(0);
     }
 
    function getIcon(wid,cloud) {
