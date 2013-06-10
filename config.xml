@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>MCF</name>
+    <name>Météo Moto</name>
     <access subdomains="false" uri="http://debug.phonegap.com"/>
 
     <description>
