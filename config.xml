@@ -8,6 +8,7 @@
     <!-- versionCode is optional and Android only -->
 
     <name>MCF</name>
+    <access subdomains="false" uri="http://debug.phonegap.com"/>
 
     <description>
         Météo sur les circuit français

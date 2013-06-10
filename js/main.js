@@ -26,7 +26,7 @@ var go=1;
         else if (currentPage==p1){
           $("#glo").css('height','2646px')
         }
-        $('body').scrollTop(0);
+        $(window).scrollTop(0);
     }
 
    function getIcon(wid,cloud) {
@@ -120,7 +120,7 @@ function updatep1(id, lon, lat) {
             if (id==0){
                 $("#loading").html("");
                 $("#namelocal").html(data.city.name);
-                $("#labeltap").html("<span class=\"fs22\">"+data.city.name+"</span>"); 
+                $("#labeltap").html("<span class=\"fs26\">"+data.city.name+"</span>"); 
               }
             
             var htmlstr="";
@@ -148,7 +148,7 @@ function updatep1(id, lon, lat) {
                     "<aside>"+Math.round(data.list[i].main.temp)+"°</aside>"+
                     "<aside><p class=\"fs16 mt05\">"+rain+"</p></aside>"+
                     "<aside class=\"mt0\">"+getIcon(data.list[i].weather[0].id,data.list[i].clouds.all)+"</aside>"+
-                    "<aside class=\"tar pr1 mt05\"><img src=\"img/status"+go+".gif\"></aside></section>";
+                    "<aside class=\"tar pr1 mt05\"><img src=\"img/status"+go+".png\"></aside></section>";
             }
             $("#p11").html("");
             $("#p11").append(htmlstr);
@@ -183,7 +183,7 @@ if(screen.width > 1000){
           if (id>0){
             //Nom en dur dans attribut label
             var label=$(this).attr('label');
-            $("#labeltap").html("<span class=\"fs22\">"+label+"</span>"); 
+            $("#labeltap").html("<span class=\"fs26\">"+label+"</span>"); 
             curid=id;
             updatep1(id, 0, 0);
             }
@@ -232,7 +232,7 @@ $(".aaa").tap(function(){
           if (id>0){
             //Nom en dur dans attribut label
             var label=$(this).attr('label');
-            $("#labeltap").html("<span class=\"fs22\">"+label+"</span>"); 
+            $("#labeltap").html("<span class=\"fs26\">"+label+"</span>"); 
             curid=id;
             updatep1(id, 0, 0);
             }

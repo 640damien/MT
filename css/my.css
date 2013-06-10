@@ -28,11 +28,11 @@ section{
 }
 
 #logo{
-	padding-top: 6px;
+	padding-top: 0px;
 	background-color: rgba(101, 253, 90, 0);
 }
 
-.pt30 { padding-top: 300px; }
+.pt32 { padding-top: 320px; }
 
 
 .fbig{
