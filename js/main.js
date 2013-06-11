@@ -12,20 +12,21 @@ var go=1;
 
     function slidePageFrom(page, from) {
         // Position the page at the starting position of the animation
-        //page.className = "page " + from;
+        page.className = "page " + from;
         // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation   
         page.className ="page transition center";
         currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
         currentPage = page;
         if (currentPage==homePage){
-          $("#glo").css('height','588px')
+          $("#glo").css('height','588px');
         }
         else if (currentPage==p2){
-          $("#glo").css('height','480px')
+          $("#glo").css('height','480px');
         }
         else if (currentPage==p1){
-          $("#glo").css('height','2646px')
+          $("#glo").css('height','2646px');
         }
+        self.loaction.href="#top";
     }
 
    function getIcon(wid,cloud) {
