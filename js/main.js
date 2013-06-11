@@ -25,6 +25,7 @@ var go=1;
           $("#glo").css('height','480px');
         }
         else if (currentPage==p1){
+          window.scrollTo(0,0);
           $("#glo").css('height','2646px');
         }
         self.loaction.href="#top";
