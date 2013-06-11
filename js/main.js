@@ -18,6 +18,7 @@ var go=1;
         currentPage.className = "page transition " + (from === "swpleft" ? "swpright" : "swpleft");
         currentPage = page;
         if (currentPage==homePage){
+          window.scrollTo(0,0);
           $("#glo").css('height','588px');
         }
         else if (currentPage==p2){
