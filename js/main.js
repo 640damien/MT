@@ -279,7 +279,7 @@ $(".aaa").tap(function(){
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('Merci d\'activer le GPS');
+        alert('Merci dactiver le GPS');
         $("#labeltap").html("ERREUR");
     }
 }
