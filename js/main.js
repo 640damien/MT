@@ -1,6 +1,6 @@
-/*$.ajaxSetup({
-     timeout: 3000
-  });*/
+/*$.ajaxSettings{
+     timeout: 5000
+  };*/
   
 
 var homePage = document.getElementById("homePage"),
@@ -279,8 +279,7 @@ $(".aaa").tap(function(){
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-                'message: ' + error.message + '\n');
+        alert('Merci d\'activer le GPS');
         $("#labeltap").html("ERREUR");
     }
 }
