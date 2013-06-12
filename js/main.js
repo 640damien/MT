@@ -1,6 +1,6 @@
-/*$.ajaxSettings{
-     timeout: 5000
-  };*/
+/*$.ajaxSetup({
+     timeout: 3000
+  });*/
   
 
 var homePage = document.getElementById("homePage"),
@@ -126,25 +126,20 @@ function updatep1(id, lon, lat) {
               }
             
             var htmlstr="";
-            var rain;
+            var rain="-";
             for(var i= 0; i < data.list.length; i++){
                     if (i==0 && id==0){
                       $("#loading").html(getIcon(data.list[i].weather[0].id,data.list[i].clouds.all));
                       $("#loading").removeClass("mt1");
-                      $("#loading i").addClass("fs34");
+                      $("#loading i").addClass("fbig");
 
                     }
-                    //Changement de jour (heure=0) et pas de première itération
-                    if (data.list[i].dt_txt.substr(11,2)==0 && i!=0){
+                    if (data.list[i].dt_txt.substr(11,2)==0){
                         color-=30;
                         d = moment.unix(data.list[i].dt);
                         htmlstr+="<p class=\"txtcenter fs18\">"+d.format("dddd D MMMM")+"</p>";
                     }
-                    //Sinon si première itération on affiche today
-                    else if(i==0){
-                      htmlstr+="<p class=\"txtcenter fs18\">Aujourd'hui</p>";
-                    }
-                    rain="&nbsp;&nbsp;&nbsp;&nbsp;-";
+                    rain="-";
                     if (data.list[i].rain !== undefined){
                       if (data.list[i].rain['3h']!=0){
                         rain=data.list[i].rain['3h']+"mm";
@@ -279,7 +274,8 @@ $(".aaa").tap(function(){
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('Merci dactiver le GPS');
+        alert('code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n');
         $("#labeltap").html("ERREUR");
     }
 }

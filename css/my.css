@@ -13,7 +13,6 @@ section{
 	height: 50px;
 	margin: 8px;
 	background-color: rgba(0, 188, 153, 0.7);
-	overflow: hidden;
 }
 
 #glo{
@@ -33,7 +32,12 @@ section{
 	background-color: rgba(101, 253, 90, 0);
 }
 
-.pt35 { padding-top: 350px; }
+.pt32 { padding-top: 320px; }
+
+
+.fbig{
+	font-size: 2.2em;
+}
 
 .mt05{margin-top: 5px !important; }
 
@@ -45,8 +49,6 @@ section{
 	background-color: rgba(0, 108, 153, 0.7);
 }
 
-.fs34{font-size: 34px;}
-.fs28{font-size: 28px;}
 .fs26{font-size: 26px;}
 .fs22{font-size: 22px;}
 .fs18{font-size: 18px;}
@@ -81,7 +83,7 @@ section{
 }
 
 .detail aside i{
-	font-size: 34px;
+	font-size: 36px;
 }
 
 .page {
