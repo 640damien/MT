@@ -113,9 +113,9 @@ function updatep1(id, lon, lat) {
         var d;
         var color=198;
         if (id>0)
-            req="http://api.openweathermap.org/data/2.5/forecast?callback=?&id="+id+"&units=metric";
+            req="http://api.openweathermap.org/data/2.5/forecast?callback=?&id="+id+"&units=metric&APPID=a90d219c2c01213a00fdc5009ae28778";
         else
-            req="http://api.openweathermap.org/data/2.5/forecast?callback=?&lon="+lon+"&lat="+lat+"&units=metric";
+            req="http://api.openweathermap.org/data/2.5/forecast?callback=?&lon="+lon+"&lat="+lat+"&units=metric&APPID=a90d219c2c01213a00fdc5009ae28778";
         $.getJSON(req,function(data){
         //$.getJSON("http://api.openweathermap.org/data/2.5/forecast?callback=?&q=london&units=metric",function(data){
 
