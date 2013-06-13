@@ -1,6 +1,6 @@
-/*$.ajaxSettings{
+/*$.ajaxSettings({
      timeout: 5000
-  };*/
+  });*/
   
 
 var homePage = document.getElementById("homePage"),
@@ -26,7 +26,7 @@ var go=1;
         }
         else if (currentPage==p1){
           window.scrollTo(0,0);
-          $("#glo").css('height','2646px');
+          $("#glo").css('height','2676px');
         }
         self.loaction.href="#top";
     }
