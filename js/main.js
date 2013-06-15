@@ -166,7 +166,7 @@ function updatep1(id, lon, lat) {
 
 Zepto(function($){
 
-var lon=0.64129;
+var lon=-0.64129;
 var lat=44.810108;
 
 //Version PC
