@@ -166,11 +166,12 @@ function updatep1(id, lon, lat) {
 
 Zepto(function($){
 
+//Version PC
+if(screen.width > 1000){
+
 var lon=0.64129;
 var lat=44.810108;
 
-//Version PC
-if(screen.width > 1000){
     //Gestion pagination
     $("#other").click(function(){
       slidePageFrom(page2, 'swpleft');
@@ -260,9 +261,10 @@ $(".aaa").tap(function(){
     // Cordova is ready
     //
     function onDeviceReady() {
+      var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true }; 
         navigator.geolocation.getCurrentPosition(onSuccess1, onError);
         navigator.geolocation.getCurrentPosition(onSuccess2, onError);
-        navigator.geolocation.getCurrentPosition(onSuccess3, onError);
+        navigator.geolocation.getCurrentPosition(onSuccess3, onError, options);
     }
 
     // onSuccess Geolocation
