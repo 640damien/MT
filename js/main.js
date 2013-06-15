@@ -166,7 +166,7 @@ function updatep1(id, lon, lat) {
 
 Zepto(function($){
 
-var lon=-0.64129;
+var lon=0.64129;
 var lat=44.810108;
 
 //Version PC
@@ -260,12 +260,16 @@ $(".aaa").tap(function(){
     // Cordova is ready
     //
     function onDeviceReady() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        navigator.geolocation.getCurrentPosition(onSuccess1, onError);
+        navigator.geolocation.getCurrentPosition(onSuccess2, onError);
+        navigator.geolocation.getCurrentPosition(onSuccess3, onError);
     }
 
     // onSuccess Geolocation
     //
-    function onSuccess(position) {
+    function onSuccess1(position) {}
+    function onSuccess2(position) {}
+    function onSuccess3(position) {
 
         	lat = position.coords.latitude;
         	lon = position.coords.longitude;
