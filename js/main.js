@@ -262,9 +262,7 @@ $(".aaa").tap(function(){
     //
     function onDeviceReady() {
       var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true }; 
-        navigator.geolocation.getCurrentPosition(onSuccess1, onError);
-        navigator.geolocation.getCurrentPosition(onSuccess2, onError);
-        navigator.geolocation.getCurrentPosition(onSuccess3, onError, options);
+        navigator.geolocation.getCurrentPosition(onSuccess3, onError3, options);
     }
 
     // onSuccess Geolocation
@@ -284,7 +282,9 @@ $(".aaa").tap(function(){
 
     // onError Callback receives a PositionError object
     //
-    function onError(error) {
+    function onError1(position) {}
+    function onError2(position) {}
+    function onError3(error) {
         alert('Merci d\'activer le GPS');
         $("#labeltap").html("ERREUR");
     }
