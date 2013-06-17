@@ -136,7 +136,7 @@ function updatep1(id, lon, lat) {
                     }
                     //Changement de jour (heure=0) et pas de première itération
                     if (data.list[i].dt_txt.substr(11,2)==0 && i!=0){
-                        color-=30;
+                        color-=20;
                         d = moment.unix(data.list[i].dt);
                         htmlstr+="<p class=\"txtcenter fs18\">"+d.format("dddd D MMMM")+"</p>";
                     }
