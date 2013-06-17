@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "org.dossou.app.meteomoto"
+        id        = "org.dossou.app.meteoMoto"
         versionCode="1" 
         version   = "1.0.0">
 
@@ -14,7 +14,7 @@
         Météo des circuits français
     </description>
 
-    <author href="http://meteoTrack.app.dossou.org" email="damien.fourcade@gmail.com">
+    <author href="http://meteoMoto.app.dossou.org" email="damien.fourcade@gmail.com">
         Capetot 2k13
     </author>
 
