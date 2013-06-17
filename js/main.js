@@ -19,7 +19,7 @@ var go=1;
         currentPage = page;
         if (currentPage==homePage){
           window.scrollTo(0,0);
-          $("#glo").css('height','588px');
+          $("#glo").css('height','818px');
         }
         else if (currentPage==p2){
           $("#glo").css('height','480px');
