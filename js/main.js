@@ -167,7 +167,7 @@ function updatep1(id, lon, lat) {
 Zepto(function($){
 
 //Version PC
-if(screen.width > 1000){
+/*if(screen.width > 1000){
 
 var lon=0.64129;
 var lat=44.810108;
@@ -206,7 +206,7 @@ var lat=44.810108;
     updatep1(0,lon,lat);
 }
 //Version Mobile
-else {
+else {*/
 
 //Gestion pagination
 $("#other").tap(function(){
@@ -288,6 +288,6 @@ $(".aaa").tap(function(){
         alert('Merci d\'activer le GPS');
         $("#labeltap").html("ERREUR");
     }
-}
+//}
 
 });
