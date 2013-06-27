@@ -26,6 +26,8 @@
     <preference name="phonegap-version" value="2.7.0" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="prerendered-icon" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-maxSdkVersion" value="17" />
 
 	<icon src="icon.png" />
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
