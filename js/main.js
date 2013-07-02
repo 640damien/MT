@@ -204,7 +204,7 @@ var data = {
 {id:"2983393",lab:"Roussillon"}
 ]};
 var template ="{{#circuits}}<section id={{id}} label=\"{{lab}}\" class=\"aaa line\">" +
-  "<aside class=\"mod left w60 mt1 fs22 pl1\">{{lab}}</aside>"+
+  "<aside class=\"mod left w80 mt1 fs22 pl1\">{{lab}}</aside>"+
   "<aside class=\"mod right pl1\"><i class=\"icon-right-open fs34\"></i></aside>"+
 "</section>{{/circuits}}";
 
