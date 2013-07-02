@@ -19,7 +19,7 @@ var go=1;
         currentPage = page;
         if (currentPage==homePage){
           window.scrollTo(0,0);
-          $("#glo").css('height','818px');
+          $("#glo").css('height','2155px');
         }
         else if (currentPage==p2){
           $("#glo").css('height','480px');
@@ -165,6 +165,52 @@ function updatep1(id, lon, lat) {
 
 
 Zepto(function($){
+
+var data = {
+ circuits:[
+{id:"6455375",lab:"Abbeville"},
+{id:"6615523",lab:"Albi"},
+{id:"3027961",lab:"Alès"},
+{id:"6441554",lab:"Anneau du Rhin"},
+{id:"6432300",lab:"Bordeaux"},
+{id:"6425408",lab:"Bourbonnais"},
+{id:"6442263",lab:"Bresse"},
+{id:"6452008",lab:"Carole"},
+{id:"3004838",lab:"Castellet"},
+{id:"2972993",lab:"Charade"},
+{id:"6425066",lab:"Clastres"},
+{id:"6439873",lab:"Croix en Ternois"},
+{id:"6428940",lab:"Dijon"},
+{id:"6430722",lab:"Dreux"},
+{id:"3018166",lab:"Folembray"},
+{id:"6451626",lab:"Fontenay-le-Comte"},
+{id:"3014177",lab:"Haute Saintonge"},
+{id:"6440053",lab:"Issoire"},
+{id:"6456476",lab:"La Ferté Gaucher"},
+{id:"3027131",lab:"Le Laquais"},
+{id:"6451495",lab:"Le Luc"},
+{id:"3003603",lab:"Le Mans"},
+{id:"6445379",lab:"Le Vigeant"},
+{id:"3004359",lab:"Lédenon"},
+{id:"3024396",lab:"Les Ecuyers"},
+{id:"3014294",lab:"Lohéac"},
+{id:"2977719",lab:"Magny-Cours"},
+{id:"3036295",lab:"Mas du Clos"},
+{id:"6432300",lab:"Mérignac"},
+{id:"3031783",lab:"Mornay"},
+{id:"3020584",lab:"Nogaro"},
+{id:"3001617",lab:"Pau-Arnos"},
+{id:"3004838",lab:"Paul Ricard"},
+{id:"2983393",lab:"Roussillon"}
+]};
+var template ="{{#circuits}}<section id={{id}} label=\"{{lab}}\" class=\"aaa line\">" +
+  "<aside class=\"mod left w60 mt1 fs22 pl1\">{{lab}}</aside>"+
+  "<aside class=\"mod right pl1\"><i class=\"icon-right-open fs34\"></i></aside>"+
+"</section>{{/circuits}}";
+
+var html = Mustache.to_html(template, data);
+$('#data').html(html);
+
 
 //Version PC
 /*if(screen.width > 1000){

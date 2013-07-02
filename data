@@ -1,0 +1,23 @@
+Abbeville 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=50.13303819999999&lon=1.828749700000003	6455375
+Albi 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=43.911071&lon=2.1141039999999975			6615523
+Anneau du Rhin 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=47.9477878&lon=7.422143900000037			6441554
+Bordeaux 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=44.8418632&lon=-0.72245410000005			6432300
+Bourbonnais 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=46.5373167&lon=3.43466090000004			6425408
+Bresse 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=46.5524309&lon=5.324189799999999			6442263
+Castellet 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=43.2499084&lon=5.785664499999939			3004838
+Charade 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=45.7444342&lon=3.036677599999962			2972993
+Clastres 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=49.749284&lon=3.222641199999998			6425066
+Dijon 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=47.364686&lon=4.89780189999999			6428940
+Dreux 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=48.7584053&lon=1.3716144999999642			6430722
+Ecuyers 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=49.1089279&lon=3.511828899999955			3022472
+Folembray 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=49.544501&lon=3.3008988000000272			3018166
+Fontenay-le-Comte 	http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=46.4347009&lon=-0.7932192000000668		6451626
+La Ferté Gaucher 	http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=48.7589638&lon=3.277332500000057			6456476
+Le Laquais			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=45.4677993&lon=5.293165600000066			3027131
+Les Ecuyers 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=49.1433636&lon=3.4895903999999973			3024396
+Lohéac 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=47.8666024&lon=-1.8975110000000086		3014294
+Mas du Clos 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=45.9276873&lon=2.304465700000037			3036295
+Mérignac			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=44.8418632&lon=-0.72245410000005			6432300
+Mornay 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=46.3242682&lon=1.929713300000003			3031783
+Paul Ricard 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=43.2499084&lon=5.785664499999939			3004838
+Roussillon 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=42.7783139&lon=2.9070930000000317			2983393
