@@ -2,21 +2,17 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.dossou.app.meteoMoto"
-        versionCode="1" 
-        version   = "1.0.0">
+        versionCode="1.0.1" 
+        version   = "1.0.1">
 
     <!-- versionCode is optional and Android only -->
 
     <name>Météo Moto</name>
     <!-- <access subdomains="false" uri="http://debug.phonegap.com"/>-->
 
-    <description>
-        Météo des circuits français
-    </description>
+    <description>Météo des circuits français</description>
 
-    <author href="http://meteoMoto.app.dossou.org" email="damien.fourcade@gmail.com">
-        Capetot 2k13
-    </author>
+    <author href="http://meteoMoto.app.dossou.org" email="damien.fourcade@gmail.com">Capetot 2k13</author>
 
 	<!-- <feature name="http://api.phonegap.com/1.0/device" /> -->
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
