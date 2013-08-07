@@ -17,7 +17,43 @@ Le Laquais			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=x
 Les Ecuyers 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=49.1433636&lon=3.4895903999999973			3024396
 Lohéac 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=47.8666024&lon=-1.8975110000000086		3014294
 Mas du Clos 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=45.9276873&lon=2.304465700000037			3036295
+Roussillon 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=42.7783139&lon=2.9070930000000317			2983393
 Mérignac			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=44.8418632&lon=-0.72245410000005			6432300
 Mornay 				http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=46.3242682&lon=1.929713300000003			3031783
 Paul Ricard 		http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=43.2499084&lon=5.785664499999939			3004838
-Roussillon 			http://api.openweathermap.org/data/2.5/weather?&units=metric&mode=xml&lat=42.7783139&lon=2.9070930000000317			2983393
+
+
+{id:"6455375",lab:"Abbeville"},
+{id:"6615523",lab:"Albi"},
+{id:"3027961",lab:"Alès"},
+{id:"6441554",lab:"Anneau du Rhin"},
+{id:"6432300",lab:"Bordeaux"},
+{id:"6425408",lab:"Bourbonnais"},
+{id:"6442263",lab:"Bresse"},
+{id:"6452008",lab:"Carole"},
+{id:"3004838",lab:"Castellet"},
+{id:"2972993",lab:"Charade"},
+{id:"6425066",lab:"Clastres"},
+{id:"6439873",lab:"Croix en Ternois"},
+{id:"6428940",lab:"Dijon"},
+{id:"6430722",lab:"Dreux"},
+{id:"3018166",lab:"Folembray"},
+{id:"6451626",lab:"Fontenay-le-Comte"},
+{id:"3014177",lab:"Haute Saintonge"},
+{id:"6440053",lab:"Issoire"},
+{id:"6456476",lab:"La Ferté Gaucher"},
+{id:"3027131",lab:"Le Laquais"},
+{id:"6451495",lab:"Le Luc"},
+{id:"3003603",lab:"Le Mans"},
+{id:"6445379",lab:"Le Vigeant"},
+{id:"3004359",lab:"Lédenon"},
+{id:"3024396",lab:"Les Ecuyers"},
+{id:"3014294",lab:"Lohéac"},
+{id:"2977719",lab:"Magny-Cours"},
+{id:"3036295",lab:"Mas du Clos"},
+{id:"6432300",lab:"Mérignac"},
+{id:"3031783",lab:"Mornay"},
+{id:"3020584",lab:"Nogaro"},
+{id:"3001617",lab:"Pau-Arnos"},
+{id:"3004838",lab:"Paul Ricard"},
+{id:"2983393",lab:"Roussillon"}
