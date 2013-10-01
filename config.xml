@@ -19,7 +19,7 @@
 	
 	<preference name="fullscreen" value="true" />
     <preference name="orientation" value="portrait" />
-    <preference name="phonegap-version" value="2.7.0" />
+    <preference name="phonegap-version" value="2.9.0" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="android-minSdkVersion" value="14" />
