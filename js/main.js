@@ -307,8 +307,9 @@ $(".aaa").tap(function(){
     // Cordova is ready
     //
     function onDeviceReady() {
-      var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true }; 
-        navigator.geolocation.getCurrentPosition(onSuccess3, onError3, options);
+      //var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true }; 
+        //navigator.geolocation.getCurrentPosition(onSuccess3, onError3, options);
+        navigator.geolocation.getAccurateCurrentPosition(onSuccess3, onError3, onProgress, {desiredAccuracy:300, maxWait:5000});
     }
 
     // onSuccess Geolocation
@@ -333,6 +334,8 @@ $(".aaa").tap(function(){
     function onError3(error) {
         alert('Merci d\'activer le GPS');
         $("#labeltap").html("ERREUR");
+    }
+    function onProgress(param) {
     }
 //}
 
