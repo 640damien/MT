@@ -14,6 +14,7 @@
 
     <author href="http://meteoMoto.app.dossou.org" email="damien.fourcade@gmail.com">Capetot 2k13</author>
 	
+	<preference name="permissions" value="none" />
 	<preference name="fullscreen" value="true" />
     <preference name="orientation" value="portrait" />
     <preference name="phonegap-version" value="3.6.3" />
