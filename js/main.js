@@ -309,7 +309,7 @@ $(".aaa").tap(function(){
     function onDeviceReady() {
       //var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true }; 
         //navigator.geolocation.getCurrentPosition(onSuccess3, onError3, options);
-        navigator.geolocation.getAccurateCurrentPosition(onSuccess3, onError3, onProgress, {desiredAccuracy:300, maxWait:5000});
+        navigator.geolocation.getAccurateCurrentPosition(onSuccess3, onError3, onProgress, {desiredAccuracy:300, maxWait:10000});
     }
 
     // onSuccess Geolocation
